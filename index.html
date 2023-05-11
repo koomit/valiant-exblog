@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발리안트 공식 블로그 : 네이버 블로그</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+    <style>
+    .container {
+        position: relative;
+    }
+    .change-img {
+        width: 910px;
+        height: 1040px;
+        position: absolute;
+        top: 816px;
+        left: 490px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        text-indent: -9999px;
+    }
+    .back-img {
+        width: 910px;
+        height: 816px;
+        position: absolute;
+        top: 0;
+        left: 490px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        text-indent: -9999px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img id="header" src="./header.png" alt="">
+        <img id="img" src="./main.png" alt="">
+        <button class="change-img" onclick="toggleImg()">이미지 변경</button>
+        <button class="back-img" onclick="backImg()">되돌리기</button>
+    </div>
+
+    <script>
+        function toggleImg() {
+            document.getElementById("img").src = "./posting.png";
+        }
+        function backImg() {
+            document.getElementById("img").src = "./main.png";
+        }
+    </script>
+</body>
+</html>
